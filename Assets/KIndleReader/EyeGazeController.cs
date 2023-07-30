@@ -96,9 +96,9 @@ public class EyeGazeController : MonoBehaviour
             }
             else
             {
+                Keyboard_UI.HoverOutCacheKey();
                 Keyboard_UI.cacheKey = null;
                 WebViewController.GazeReaderOut();
-                Keyboard_UI.HoverOutCacheKey();
             }
 
             Debug.Log("Debug01" + _endPoint);
