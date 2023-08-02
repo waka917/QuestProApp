@@ -957,6 +957,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralCA8B964DE1C66CE842171BF0792060AC770C7D10
 IL2CPP_EXTERN_C String_t* _stringLiteralCB57D903BB7B7CB347B9EB162667FD4B3170624D;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBC59E001755D6920BD8A2C6420D11291A5ECC36;
 IL2CPP_EXTERN_C String_t* _stringLiteralCD660EB511DCC66327707F6EEDFC7C64137948CC;
+IL2CPP_EXTERN_C String_t* _stringLiteralCE7BFF11CE914588774CC6049B887B65B4EDE136;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF28F15B7615FFD9389472118F8C39798D9EFE85;
 IL2CPP_EXTERN_C String_t* _stringLiteralD1DD2FFF91DB5D3538D5953E55F30E6CFC4822E2;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1102217D35FB29752000CA15788E3A2A1CDCF65;
@@ -4922,6 +4923,8 @@ struct Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C  : public MonoBehav
 	List_1_t5ED555E220A2C0CA4F1CC393401AF0D7BA5B456B* ___ReleaseKey_list_17;
 	// UnityEngine.GameObject Keyboard_UI::q_key
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___q_key_18;
+	// UnityEngine.UI.Slider Keyboard_UI::Slider
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___Slider_19;
 };
 
 // LocomotionController
@@ -7899,6 +7902,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Remove_m8266E0BF5D8565D4CDC8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Keyboard_UI_Click_Shift_mF414E7E9678EAFC52A0B2B07D5568D644F8BDBB8 (Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::get_activeSelf()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.String System.Single::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Color32::.ctor(System.Byte,System.Byte,System.Byte,System.Byte)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, uint8_t ___r0, uint8_t ___g1, uint8_t ___b2, uint8_t ___a3, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color32::op_Implicit(UnityEngine.Color32)
@@ -10535,6 +10540,44 @@ IL_0026:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___Keyboard_shift_9;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Keyboard_UI::change_resolution()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Keyboard_UI_change_resolution_m92D79B609EDD87AFA3C00E6EE5D580A878697832 (Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE7BFF11CE914588774CC6049B887B65B4EDE136);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		// WebViewController.WebViewPrefab.Resolution = Slider.value;
+		WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_0 = __this->___WebViewController_11;
+		NullCheck(L_0);
+		WebViewPrefab_t1D05B9246ECC522BE8D1D574B38EA4C6789105E3* L_1 = L_0->___WebViewPrefab_4;
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_2 = __this->___Slider_19;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = VirtualFuncInvoker0< float >::Invoke(46 /* System.Single UnityEngine.UI.Slider::get_value() */, L_2);
+		NullCheck(L_1);
+		L_1->___Resolution_45 = L_3;
+		// Debug.Log("Debug07" + Slider.value);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_4 = __this->___Slider_19;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = VirtualFuncInvoker0< float >::Invoke(46 /* System.Single UnityEngine.UI.Slider::get_value() */, L_4);
+		V_0 = L_5;
+		String_t* L_6;
+		L_6 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_0), NULL);
+		String_t* L_7;
+		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralCE7BFF11CE914588774CC6049B887B65B4EDE136, L_6, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
 		// }
 		return;
 	}

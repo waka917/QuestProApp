@@ -28,6 +28,8 @@ public class Keyboard_UI : MonoBehaviour
 
     public GameObject q_key;
 
+    public Slider Slider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -197,6 +199,13 @@ public class Keyboard_UI : MonoBehaviour
             Keyboard_shift.SetActive(false);
         }
         
+    }
+
+
+    public void change_resolution()
+    {
+        WebViewController.WebViewPrefab.Resolution = Slider.value;
+        Debug.Log("Debug07" + Slider.value);
     }
 
 }
