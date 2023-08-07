@@ -360,6 +360,7 @@ namespace Oculus.Interaction
 
         public override void Process()
         {
+            Debug.Log("test09-1");
             ProcessPointers(_pointersForDeletion, true);
             ProcessPointers(_pointerMap.Values, false);
         }
@@ -389,12 +390,14 @@ namespace Oculus.Interaction
 
             foreach (Pointer pointer in _pointersToProcessScratch)
             {
+                Debug.Log("test09-2");
                 ProcessPointer(pointer, clearAndReleasePointers);
             }
         }
 
         private void ProcessPointer(Pointer pointer, bool forceRelease = false)
         {
+            Debug.Log("test09-3");
             bool pressed = false;
             bool released = false;
             bool wasDragging = pointer.PointerEventData.dragging;
@@ -423,6 +426,7 @@ namespace Oculus.Interaction
 
         private void HandleSelectableHover(Pointer pointer, bool wasDragging)
         {
+            Debug.Log("Test09-4");
             bool dragging = pointer.PointerEventData.dragging || wasDragging;
 
             GameObject currentOverGo = pointer.PointerEventData.pointerCurrentRaycast.gameObject;

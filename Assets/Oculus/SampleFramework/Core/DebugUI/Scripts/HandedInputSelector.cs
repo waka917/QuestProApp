@@ -37,6 +37,7 @@ public class HandedInputSelector : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("test08" + m_InputModule.rayTransform);
         if (OVRInput.GetActiveController() == OVRInput.Controller.LTouch)
         {
             SetActiveController(OVRInput.Controller.LTouch);

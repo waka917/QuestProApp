@@ -39,6 +39,9 @@ namespace UnityEngine.EventSystems
         [Tooltip("Keyboard button to act as gaze click")]
         public KeyCode gazeClickKey = KeyCode.Space;
 
+        public OVRHand hand_L;
+        public OVRHand hand_R;
+
         [Header("Physics")]
         [Tooltip("Perform an sphere cast to determine correct depth for gaze pointer")]
         public bool performSphereCastForGazepointer;
@@ -906,6 +909,8 @@ namespace UnityEngine.EventSystems
 #if ENABLE_LEGACY_INPUT_MANAGER
             var pressed = Input.GetKeyDown(gazeClickKey) || OVRInput.GetDown(joyPadClickButton);
             var released = Input.GetKeyUp(gazeClickKey) || OVRInput.GetUp(joyPadClickButton);
+            //var pressed = Input.GetKeyDown(gazeClickKey) || OVRInput.GetDown(joyPadClickButton) || hand_L.GetFingerIsPinching(OVRHand.HandFinger.Index) || hand_R.GetFingerIsPinching(OVRHand.HandFinger.Index);
+            //var released = Input.GetKeyUp(gazeClickKey) || OVRInput.GetUp(joyPadClickButton) || !hand_L.GetFingerIsPinching(OVRHand.HandFinger.Index) || !hand_R.GetFingerIsPinching(OVRHand.HandFinger.Index);
 
 #if UNITY_ANDROID && !UNITY_EDITOR
             pressed |= Input.GetMouseButtonDown(0);

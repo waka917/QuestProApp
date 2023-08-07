@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class WebViewController : MonoBehaviour
 {
     public WebViewPrefab WebViewPrefab;
+    public CanvasWebViewPrefab CanvasWebViewPrefab;
 
 
     async void Start()
@@ -17,7 +18,9 @@ public class WebViewController : MonoBehaviour
 
         // Wait for the prefab to initialize because its WebView property is null until then.
         // https://developer.vuplex.com/webview/WebViewPrefab#WaitUntilInitialized
-        await WebViewPrefab.WaitUntilInitialized();
+        
+        //await WebViewPrefab.WaitUntilInitialized();
+        await CanvasWebViewPrefab.WaitUntilInitialized();
 
         //WebViewPrefab.WebView.LoadUrl("https://twitter.com");
 
@@ -32,13 +35,13 @@ public class WebViewController : MonoBehaviour
 
     public void Input_ArrowRight()
     {
-        WebViewPrefab.WebView.SendKey("ArrowRight");
+        CanvasWebViewPrefab.WebView.SendKey("ArrowRight");
         Debug.Log("ページ送り_右");
     }
 
     public void Input_ArrowLeft()
     {
-        WebViewPrefab.WebView.SendKey("ArrowLeft");
+        CanvasWebViewPrefab.WebView.SendKey("ArrowLeft");
         Debug.Log("ページ送り_左");
     }
 
@@ -46,14 +49,14 @@ public class WebViewController : MonoBehaviour
     {
         if(st != ".com")
         {
-            WebViewPrefab.WebView.SendKey(st);
+            CanvasWebViewPrefab.WebView.SendKey(st);
         }
         else
         {
-            WebViewPrefab.WebView.SendKey(".");
-            WebViewPrefab.WebView.SendKey("c");
-            WebViewPrefab.WebView.SendKey("o");
-            WebViewPrefab.WebView.SendKey("m");
+            CanvasWebViewPrefab.WebView.SendKey(".");
+            CanvasWebViewPrefab.WebView.SendKey("c");
+            CanvasWebViewPrefab.WebView.SendKey("o");
+            CanvasWebViewPrefab.WebView.SendKey("m");
         }
         Debug.Log("Debug05" + st);
     }
@@ -68,7 +71,7 @@ public class WebViewController : MonoBehaviour
 
     public void InputKey()
     {
-        WebViewPrefab.WebView.SendKey("S");
+        CanvasWebViewPrefab.WebView.SendKey("S");
         Debug.Log("文字入力");
     }
 

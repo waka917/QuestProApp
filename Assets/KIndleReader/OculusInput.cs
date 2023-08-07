@@ -13,6 +13,8 @@ public class OculusInput : MonoBehaviour
 
     bool pinchi = false;
 
+    // this is test of VS
+
     // Start is called before the first frame update
     void Start()
     {

@@ -6388,48 +6388,52 @@ struct OVRInputModule_tA57D6FB43C84C28A9A6300E1B97F01703A87FD8A  : public Pointe
 	int32_t ___joyPadClickButton_19;
 	// UnityEngine.KeyCode UnityEngine.EventSystems.OVRInputModule::gazeClickKey
 	int32_t ___gazeClickKey_20;
+	// OVRHand UnityEngine.EventSystems.OVRInputModule::hand_L
+	OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___hand_L_21;
+	// OVRHand UnityEngine.EventSystems.OVRInputModule::hand_R
+	OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___hand_R_22;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::performSphereCastForGazepointer
-	bool ___performSphereCastForGazepointer_21;
+	bool ___performSphereCastForGazepointer_23;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::useRightStickScroll
-	bool ___useRightStickScroll_22;
+	bool ___useRightStickScroll_24;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::rightStickDeadZone
-	float ___rightStickDeadZone_23;
+	float ___rightStickDeadZone_25;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::useSwipeScroll
-	bool ___useSwipeScroll_24;
+	bool ___useSwipeScroll_26;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::swipeDragThreshold
-	float ___swipeDragThreshold_25;
+	float ___swipeDragThreshold_27;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::swipeDragScale
-	float ___swipeDragScale_26;
+	float ___swipeDragScale_28;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::InvertSwipeXAxis
-	bool ___InvertSwipeXAxis_27;
+	bool ___InvertSwipeXAxis_29;
 	// OVRRaycaster UnityEngine.EventSystems.OVRInputModule::activeGraphicRaycaster
-	OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* ___activeGraphicRaycaster_28;
+	OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* ___activeGraphicRaycaster_30;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::angleDragThreshold
-	float ___angleDragThreshold_29;
+	float ___angleDragThreshold_31;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_SpherecastRadius
-	float ___m_SpherecastRadius_30;
+	float ___m_SpherecastRadius_32;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_NextAction
-	float ___m_NextAction_31;
+	float ___m_NextAction_33;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.OVRInputModule::m_LastMousePosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_LastMousePosition_32;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_LastMousePosition_34;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.OVRInputModule::m_MousePosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_MousePosition_33;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_MousePosition_35;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_HorizontalAxis
-	String_t* ___m_HorizontalAxis_34;
+	String_t* ___m_HorizontalAxis_36;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_VerticalAxis
-	String_t* ___m_VerticalAxis_35;
+	String_t* ___m_VerticalAxis_37;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_SubmitButton
-	String_t* ___m_SubmitButton_36;
+	String_t* ___m_SubmitButton_38;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_CancelButton
-	String_t* ___m_CancelButton_37;
+	String_t* ___m_CancelButton_39;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_InputActionsPerSecond
-	float ___m_InputActionsPerSecond_38;
+	float ___m_InputActionsPerSecond_40;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::m_AllowActivationOnMobileDevice
-	bool ___m_AllowActivationOnMobileDevice_39;
+	bool ___m_AllowActivationOnMobileDevice_41;
 	// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.OVRPointerEventData> UnityEngine.EventSystems.OVRInputModule::m_VRRayPointerData
-	Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* ___m_VRRayPointerData_40;
+	Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* ___m_VRRayPointerData_42;
 	// UnityEngine.EventSystems.PointerInputModule/MouseState UnityEngine.EventSystems.OVRInputModule::m_MouseState
-	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_41;
+	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_43;
 };
 
 // OVRRaycaster
