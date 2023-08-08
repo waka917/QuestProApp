@@ -124,6 +124,7 @@ public class Keyboard_UI : MonoBehaviour
         {
             var Image = cacheKey.GetComponent<Image>();
             Image.color = key_c;
+            cacheKey = null;
         }
     }
 
@@ -143,15 +144,12 @@ public class Keyboard_UI : MonoBehaviour
 
     public void ReleaseKey()
     {
-        var Image = cacheKey.GetComponent<Image>();
-        Image.color = key_c;
-
         press = false;
 
         Debug.Log("Debug06-1 " + cacheKey.gameObject.name + " " + cacheKey.gameObject.tag);
         ReleaseKey_list.Add(cacheKey.GetComponent<RectTransform>());
 
-        cacheKey = null;
+        HoverOutCacheKey();
     }
 
     void PressDown(GameObject gameObject)

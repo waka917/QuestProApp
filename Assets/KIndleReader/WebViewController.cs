@@ -8,6 +8,7 @@ public class WebViewController : MonoBehaviour
 {
     public WebViewPrefab WebViewPrefab;
     public CanvasWebViewPrefab CanvasWebViewPrefab;
+    string URL;
 
 
     async void Start()
@@ -23,6 +24,23 @@ public class WebViewController : MonoBehaviour
         await CanvasWebViewPrefab.WaitUntilInitialized();
 
         //WebViewPrefab.WebView.LoadUrl("https://twitter.com");
+
+
+        // amazon_domain
+        // 1 : JP
+        // 2 : US
+
+        if (PlayerPrefs.HasKey("amazon_domain"))
+        {
+            URL = PlayerPrefs.GetString("amazon_domain");
+        }
+        else
+        {
+            PlayerPrefs.SetString("amazon_domain", "https://read.amazon.co.jp/kindle-library");
+        }
+
+        Debug.Log("Debug09" + URL);
+        CanvasWebViewPrefab.WebView.LoadUrl(URL);
 
 }
 
@@ -141,5 +159,24 @@ public class WebViewController : MonoBehaviour
             }
         }
         
+    }
+
+    public void load_amazonUS()
+    {
+        CanvasWebViewPrefab.WebView.LoadUrl("https://read.amazon.com/kindle-library");
+        PlayerPrefs.SetString("amazon_domain", "https://read.amazon.com/kindle-library");
+
+        float resolution = CanvasWebViewPrefab.Resolution;
+        Debug.Log("Debug10" + resolution);
+        CanvasWebViewPrefab.Resolution = resolution;
+    }
+
+    public void load_amazonJP()
+    {
+        CanvasWebViewPrefab.WebView.LoadUrl("https://read.amazon.co.jp/kindle-library");
+        PlayerPrefs.SetString("amazon_domain", "https://read.amazon.co.jp/kindle-library");
+
+        float resolution = CanvasWebViewPrefab.Resolution;
+        CanvasWebViewPrefab.Resolution = resolution;
     }
 }
