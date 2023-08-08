@@ -412,6 +412,8 @@ struct MethodInfo_t;
 struct OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9;
 // OVRCursor
 struct OVRCursor_tC9427BFBD60354F4A80BD9129257DE67BE597E9A;
+// OVRHand
+struct OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509;
 // UnityEngine.EventSystems.OVRInputModule
 struct OVRInputModule_tA57D6FB43C84C28A9A6300E1B97F01703A87FD8A;
 // UnityEngine.EventSystems.OVRPhysicsRaycaster
@@ -7364,48 +7366,52 @@ struct OVRInputModule_tA57D6FB43C84C28A9A6300E1B97F01703A87FD8A  : public Pointe
 	int32_t ___joyPadClickButton_19;
 	// UnityEngine.KeyCode UnityEngine.EventSystems.OVRInputModule::gazeClickKey
 	int32_t ___gazeClickKey_20;
+	// OVRHand UnityEngine.EventSystems.OVRInputModule::hand_L
+	OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___hand_L_21;
+	// OVRHand UnityEngine.EventSystems.OVRInputModule::hand_R
+	OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___hand_R_22;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::performSphereCastForGazepointer
-	bool ___performSphereCastForGazepointer_21;
+	bool ___performSphereCastForGazepointer_23;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::useRightStickScroll
-	bool ___useRightStickScroll_22;
+	bool ___useRightStickScroll_24;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::rightStickDeadZone
-	float ___rightStickDeadZone_23;
+	float ___rightStickDeadZone_25;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::useSwipeScroll
-	bool ___useSwipeScroll_24;
+	bool ___useSwipeScroll_26;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::swipeDragThreshold
-	float ___swipeDragThreshold_25;
+	float ___swipeDragThreshold_27;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::swipeDragScale
-	float ___swipeDragScale_26;
+	float ___swipeDragScale_28;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::InvertSwipeXAxis
-	bool ___InvertSwipeXAxis_27;
+	bool ___InvertSwipeXAxis_29;
 	// OVRRaycaster UnityEngine.EventSystems.OVRInputModule::activeGraphicRaycaster
-	OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* ___activeGraphicRaycaster_28;
+	OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* ___activeGraphicRaycaster_30;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::angleDragThreshold
-	float ___angleDragThreshold_29;
+	float ___angleDragThreshold_31;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_SpherecastRadius
-	float ___m_SpherecastRadius_30;
+	float ___m_SpherecastRadius_32;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_NextAction
-	float ___m_NextAction_31;
+	float ___m_NextAction_33;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.OVRInputModule::m_LastMousePosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_LastMousePosition_32;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_LastMousePosition_34;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.OVRInputModule::m_MousePosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_MousePosition_33;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_MousePosition_35;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_HorizontalAxis
-	String_t* ___m_HorizontalAxis_34;
+	String_t* ___m_HorizontalAxis_36;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_VerticalAxis
-	String_t* ___m_VerticalAxis_35;
+	String_t* ___m_VerticalAxis_37;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_SubmitButton
-	String_t* ___m_SubmitButton_36;
+	String_t* ___m_SubmitButton_38;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_CancelButton
-	String_t* ___m_CancelButton_37;
+	String_t* ___m_CancelButton_39;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_InputActionsPerSecond
-	float ___m_InputActionsPerSecond_38;
+	float ___m_InputActionsPerSecond_40;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::m_AllowActivationOnMobileDevice
-	bool ___m_AllowActivationOnMobileDevice_39;
+	bool ___m_AllowActivationOnMobileDevice_41;
 	// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.OVRPointerEventData> UnityEngine.EventSystems.OVRInputModule::m_VRRayPointerData
-	Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* ___m_VRRayPointerData_40;
+	Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* ___m_VRRayPointerData_42;
 	// UnityEngine.EventSystems.PointerInputModule/MouseState UnityEngine.EventSystems.OVRInputModule::m_MouseState
-	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_41;
+	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_43;
 };
 
 // OVRRaycaster
@@ -18374,45 +18380,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule__ctor_m9F284E36BA8F046C6B
 		// public KeyCode gazeClickKey = KeyCode.Space;
 		__this->___gazeClickKey_20 = ((int32_t)32);
 		// public bool useRightStickScroll = true;
-		__this->___useRightStickScroll_22 = (bool)1;
+		__this->___useRightStickScroll_24 = (bool)1;
 		// public float rightStickDeadZone = 0.15f;
-		__this->___rightStickDeadZone_23 = (0.150000006f);
+		__this->___rightStickDeadZone_25 = (0.150000006f);
 		// public bool useSwipeScroll = true;
-		__this->___useSwipeScroll_24 = (bool)1;
+		__this->___useSwipeScroll_26 = (bool)1;
 		// public float swipeDragThreshold = 2;
-		__this->___swipeDragThreshold_25 = (2.0f);
+		__this->___swipeDragThreshold_27 = (2.0f);
 		// public float swipeDragScale = 1f;
-		__this->___swipeDragScale_26 = (1.0f);
+		__this->___swipeDragScale_28 = (1.0f);
 		// public float angleDragThreshold = 1;
-		__this->___angleDragThreshold_29 = (1.0f);
+		__this->___angleDragThreshold_31 = (1.0f);
 		// private float m_SpherecastRadius = 1.0f;
-		__this->___m_SpherecastRadius_30 = (1.0f);
+		__this->___m_SpherecastRadius_32 = (1.0f);
 		// private string m_HorizontalAxis = "Horizontal";
-		__this->___m_HorizontalAxis_34 = _stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HorizontalAxis_34), (void*)_stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E);
+		__this->___m_HorizontalAxis_36 = _stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HorizontalAxis_36), (void*)_stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E);
 		// private string m_VerticalAxis = "Vertical";
-		__this->___m_VerticalAxis_35 = _stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VerticalAxis_35), (void*)_stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A);
+		__this->___m_VerticalAxis_37 = _stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VerticalAxis_37), (void*)_stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A);
 		// private string m_SubmitButton = "Submit";
-		__this->___m_SubmitButton_36 = _stringLiteral190CDBBC7377A308B78E27EF91319FD2DA386895;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SubmitButton_36), (void*)_stringLiteral190CDBBC7377A308B78E27EF91319FD2DA386895);
+		__this->___m_SubmitButton_38 = _stringLiteral190CDBBC7377A308B78E27EF91319FD2DA386895;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SubmitButton_38), (void*)_stringLiteral190CDBBC7377A308B78E27EF91319FD2DA386895);
 		// private string m_CancelButton = "Cancel";
-		__this->___m_CancelButton_37 = _stringLiteral93717CD8FCD45BAB4F15D3BACC989A6A93BA2674;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CancelButton_37), (void*)_stringLiteral93717CD8FCD45BAB4F15D3BACC989A6A93BA2674);
+		__this->___m_CancelButton_39 = _stringLiteral93717CD8FCD45BAB4F15D3BACC989A6A93BA2674;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CancelButton_39), (void*)_stringLiteral93717CD8FCD45BAB4F15D3BACC989A6A93BA2674);
 		// private float m_InputActionsPerSecond = 10;
-		__this->___m_InputActionsPerSecond_38 = (10.0f);
+		__this->___m_InputActionsPerSecond_40 = (10.0f);
 		// protected Dictionary<int, OVRPointerEventData> m_VRRayPointerData = new Dictionary<int, OVRPointerEventData>();
 		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_0 = (Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B*)il2cpp_codegen_object_new(Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Dictionary_2__ctor_m945703AD572432985F6A555BBE2C516D84D78989(L_0, Dictionary_2__ctor_m945703AD572432985F6A555BBE2C516D84D78989_RuntimeMethod_var);
-		__this->___m_VRRayPointerData_40 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VRRayPointerData_40), (void*)L_0);
+		__this->___m_VRRayPointerData_42 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VRRayPointerData_42), (void*)L_0);
 		// private readonly MouseState m_MouseState = new MouseState();
 		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_1 = (MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09*)il2cpp_codegen_object_new(MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		MouseState__ctor_mF4A8041A86E50D91202770E73CE0DAF12BB207D9(L_1, NULL);
-		__this->___m_MouseState_41 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MouseState_41), (void*)L_1);
+		__this->___m_MouseState_43 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MouseState_43), (void*)L_1);
 		// protected OVRInputModule()
 		PointerInputModule__ctor_mBF074492478BFC24F87EF2C941D6C11A8ACDAF11(__this, NULL);
 		// }
@@ -18432,7 +18438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInputModule_get_allowActivationOnMobi
 {
 	{
 		// get { return m_AllowActivationOnMobileDevice; }
-		bool L_0 = __this->___m_AllowActivationOnMobileDevice_39;
+		bool L_0 = __this->___m_AllowActivationOnMobileDevice_41;
 		return L_0;
 	}
 }
@@ -18442,7 +18448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_set_allowActivationOnMobi
 	{
 		// set { m_AllowActivationOnMobileDevice = value; }
 		bool L_0 = ___value0;
-		__this->___m_AllowActivationOnMobileDevice_39 = L_0;
+		__this->___m_AllowActivationOnMobileDevice_41 = L_0;
 		// set { m_AllowActivationOnMobileDevice = value; }
 		return;
 	}
@@ -18452,7 +18458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRInputModule_get_inputActionsPerSecon
 {
 	{
 		// get { return m_InputActionsPerSecond; }
-		float L_0 = __this->___m_InputActionsPerSecond_38;
+		float L_0 = __this->___m_InputActionsPerSecond_40;
 		return L_0;
 	}
 }
@@ -18462,7 +18468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_set_inputActionsPerSecond
 	{
 		// set { m_InputActionsPerSecond = value; }
 		float L_0 = ___value0;
-		__this->___m_InputActionsPerSecond_38 = L_0;
+		__this->___m_InputActionsPerSecond_40 = L_0;
 		// set { m_InputActionsPerSecond = value; }
 		return;
 	}
@@ -18472,7 +18478,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OVRInputModule_get_horizontalAxis_m
 {
 	{
 		// get { return m_HorizontalAxis; }
-		String_t* L_0 = __this->___m_HorizontalAxis_34;
+		String_t* L_0 = __this->___m_HorizontalAxis_36;
 		return L_0;
 	}
 }
@@ -18482,8 +18488,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_set_horizontalAxis_mC1ACF
 	{
 		// set { m_HorizontalAxis = value; }
 		String_t* L_0 = ___value0;
-		__this->___m_HorizontalAxis_34 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HorizontalAxis_34), (void*)L_0);
+		__this->___m_HorizontalAxis_36 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HorizontalAxis_36), (void*)L_0);
 		// set { m_HorizontalAxis = value; }
 		return;
 	}
@@ -18493,7 +18499,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OVRInputModule_get_verticalAxis_m4D
 {
 	{
 		// get { return m_VerticalAxis; }
-		String_t* L_0 = __this->___m_VerticalAxis_35;
+		String_t* L_0 = __this->___m_VerticalAxis_37;
 		return L_0;
 	}
 }
@@ -18503,8 +18509,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_set_verticalAxis_m0FD387F
 	{
 		// set { m_VerticalAxis = value; }
 		String_t* L_0 = ___value0;
-		__this->___m_VerticalAxis_35 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VerticalAxis_35), (void*)L_0);
+		__this->___m_VerticalAxis_37 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VerticalAxis_37), (void*)L_0);
 		// set { m_VerticalAxis = value; }
 		return;
 	}
@@ -18514,7 +18520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OVRInputModule_get_submitButton_mB4
 {
 	{
 		// get { return m_SubmitButton; }
-		String_t* L_0 = __this->___m_SubmitButton_36;
+		String_t* L_0 = __this->___m_SubmitButton_38;
 		return L_0;
 	}
 }
@@ -18524,8 +18530,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_set_submitButton_m79894AD
 	{
 		// set { m_SubmitButton = value; }
 		String_t* L_0 = ___value0;
-		__this->___m_SubmitButton_36 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SubmitButton_36), (void*)L_0);
+		__this->___m_SubmitButton_38 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SubmitButton_38), (void*)L_0);
 		// set { m_SubmitButton = value; }
 		return;
 	}
@@ -18535,7 +18541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OVRInputModule_get_cancelButton_m75
 {
 	{
 		// get { return m_CancelButton; }
-		String_t* L_0 = __this->___m_CancelButton_37;
+		String_t* L_0 = __this->___m_CancelButton_39;
 		return L_0;
 	}
 }
@@ -18545,8 +18551,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_set_cancelButton_m439529C
 	{
 		// set { m_CancelButton = value; }
 		String_t* L_0 = ___value0;
-		__this->___m_CancelButton_37 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CancelButton_37), (void*)L_0);
+		__this->___m_CancelButton_39 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CancelButton_39), (void*)L_0);
 		// set { m_CancelButton = value; }
 		return;
 	}
@@ -18556,14 +18562,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_UpdateModule_m1FE521EFA92
 {
 	{
 		// m_LastMousePosition = m_MousePosition;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___m_MousePosition_33;
-		__this->___m_LastMousePosition_32 = L_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___m_MousePosition_35;
+		__this->___m_LastMousePosition_34 = L_0;
 		// m_MousePosition = Input.mousePosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_1, NULL);
-		__this->___m_MousePosition_33 = L_2;
+		__this->___m_MousePosition_35 = L_2;
 		// }
 		return;
 	}
@@ -18573,7 +18579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInputModule_IsModuleSupported_m7B9DE0
 {
 	{
 		// return m_AllowActivationOnMobileDevice || Input.mousePresent;
-		bool L_0 = __this->___m_AllowActivationOnMobileDevice_39;
+		bool L_0 = __this->___m_AllowActivationOnMobileDevice_41;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -18612,28 +18618,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInputModule_ShouldActivateModule_mA01
 IL_000a:
 	{
 		// var shouldActivate = Input.GetButtonDown(m_SubmitButton);
-		String_t* L_1 = __this->___m_SubmitButton_36;
+		String_t* L_1 = __this->___m_SubmitButton_38;
 		bool L_2;
 		L_2 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_1, NULL);
 		// shouldActivate |= Input.GetButtonDown(m_CancelButton);
-		String_t* L_3 = __this->___m_CancelButton_37;
+		String_t* L_3 = __this->___m_CancelButton_39;
 		bool L_4;
 		L_4 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_3, NULL);
 		// shouldActivate |= !Mathf.Approximately(Input.GetAxisRaw(m_HorizontalAxis), 0.0f);
-		String_t* L_5 = __this->___m_HorizontalAxis_34;
+		String_t* L_5 = __this->___m_HorizontalAxis_36;
 		float L_6;
 		L_6 = Input_GetAxisRaw_m47C0CF8E090561A2F407A4E11D5F2A45044EB8E4(L_5, NULL);
 		bool L_7;
 		L_7 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(L_6, (0.0f), NULL);
 		// shouldActivate |= !Mathf.Approximately(Input.GetAxisRaw(m_VerticalAxis), 0.0f);
-		String_t* L_8 = __this->___m_VerticalAxis_35;
+		String_t* L_8 = __this->___m_VerticalAxis_37;
 		float L_9;
 		L_9 = Input_GetAxisRaw_m47C0CF8E090561A2F407A4E11D5F2A45044EB8E4(L_8, NULL);
 		bool L_10;
 		L_10 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(L_9, (0.0f), NULL);
 		// shouldActivate |= (m_MousePosition - m_LastMousePosition).sqrMagnitude > 0.0f;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = __this->___m_MousePosition_33;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12 = __this->___m_LastMousePosition_32;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = __this->___m_MousePosition_35;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12 = __this->___m_LastMousePosition_34;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
 		L_13 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_11, L_12, NULL);
 		V_0 = L_13;
@@ -18664,13 +18670,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRInputModule_ActivateModule_m62AF1A8B1
 		L_0 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_0, NULL);
-		__this->___m_MousePosition_33 = L_1;
+		__this->___m_MousePosition_35 = L_1;
 		// m_LastMousePosition = Input.mousePosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
 		L_3 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_2, NULL);
-		__this->___m_LastMousePosition_32 = L_3;
+		__this->___m_LastMousePosition_34 = L_3;
 		// var toSelect = eventSystem.currentSelectedGameObject;
 		EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707* L_4;
 		L_4 = BaseInputModule_get_eventSystem_m341B2378F61A58D5432906B9EE1E12265E2FAB33_inline(__this, NULL);
@@ -18764,7 +18770,7 @@ IL_0015:
 		L_3 = VirtualFuncInvoker0< BaseEventData_tE03A848325C0AE8E76C6CA15FD86395EBF83364F* >::Invoke(19 /* UnityEngine.EventSystems.BaseEventData UnityEngine.EventSystems.BaseInputModule::GetBaseEventData() */, __this);
 		V_0 = L_3;
 		// if (Input.GetButtonDown(m_SubmitButton))
-		String_t* L_4 = __this->___m_SubmitButton_36;
+		String_t* L_4 = __this->___m_SubmitButton_38;
 		bool L_5;
 		L_5 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_4, NULL);
 		if (!L_5)
@@ -18790,7 +18796,7 @@ IL_0015:
 IL_0040:
 	{
 		// if (Input.GetButtonDown(m_CancelButton))
-		String_t* L_11 = __this->___m_CancelButton_37;
+		String_t* L_11 = __this->___m_CancelButton_39;
 		bool L_12;
 		L_12 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_11, NULL);
 		if (!L_12)
@@ -18828,16 +18834,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInputModule_AllowMoveEventProcessing_
 {
 	{
 		// bool allow = Input.GetButtonDown(m_HorizontalAxis);
-		String_t* L_0 = __this->___m_HorizontalAxis_34;
+		String_t* L_0 = __this->___m_HorizontalAxis_36;
 		bool L_1;
 		L_1 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_0, NULL);
 		// allow |= Input.GetButtonDown(m_VerticalAxis);
-		String_t* L_2 = __this->___m_VerticalAxis_35;
+		String_t* L_2 = __this->___m_VerticalAxis_37;
 		bool L_3;
 		L_3 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_2, NULL);
 		// allow |= (time > m_NextAction);
 		float L_4 = ___time0;
-		float L_5 = __this->___m_NextAction_31;
+		float L_5 = __this->___m_NextAction_33;
 		// return allow;
 		return (bool)((int32_t)(((int32_t)((int32_t)L_1|(int32_t)L_3))|((((float)L_4) > ((float)L_5))? 1 : 0)));
 	}
@@ -18853,17 +18859,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		L_0 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		V_0 = L_0;
 		// move.x = Input.GetAxisRaw(m_HorizontalAxis);
-		String_t* L_1 = __this->___m_HorizontalAxis_34;
+		String_t* L_1 = __this->___m_HorizontalAxis_36;
 		float L_2;
 		L_2 = Input_GetAxisRaw_m47C0CF8E090561A2F407A4E11D5F2A45044EB8E4(L_1, NULL);
 		(&V_0)->___x_0 = L_2;
 		// move.y = Input.GetAxisRaw(m_VerticalAxis);
-		String_t* L_3 = __this->___m_VerticalAxis_35;
+		String_t* L_3 = __this->___m_VerticalAxis_37;
 		float L_4;
 		L_4 = Input_GetAxisRaw_m47C0CF8E090561A2F407A4E11D5F2A45044EB8E4(L_3, NULL);
 		(&V_0)->___y_1 = L_4;
 		// if (Input.GetButtonDown(m_HorizontalAxis))
-		String_t* L_5 = __this->___m_HorizontalAxis_34;
+		String_t* L_5 = __this->___m_HorizontalAxis_36;
 		bool L_6;
 		L_6 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_5, NULL);
 		if (!L_6)
@@ -18903,7 +18909,7 @@ IL_0050:
 IL_0069:
 	{
 		// if (Input.GetButtonDown(m_VerticalAxis))
-		String_t* L_11 = __this->___m_VerticalAxis_35;
+		String_t* L_11 = __this->___m_VerticalAxis_37;
 		bool L_12;
 		L_12 = Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579(L_11, NULL);
 		if (!L_12)
@@ -19042,8 +19048,8 @@ IL_0075:
 	{
 		// m_NextAction = time + 1f / m_InputActionsPerSecond;
 		float L_22 = V_0;
-		float L_23 = __this->___m_InputActionsPerSecond_38;
-		__this->___m_NextAction_31 = ((float)il2cpp_codegen_add(L_22, ((float)((1.0f)/L_23))));
+		float L_23 = __this->___m_InputActionsPerSecond_40;
+		__this->___m_NextAction_33 = ((float)il2cpp_codegen_add(L_22, ((float)((1.0f)/L_23))));
 		// return axisEventData.used;
 		AxisEventData_t4AA742BC101B1AA300B16EE7F19E31B91F37A938* L_24 = V_2;
 		NullCheck(L_24);
@@ -19940,7 +19946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInputModule_GetPointerData_m1D35FE2BE
 	}
 	{
 		// if (!m_VRRayPointerData.TryGetValue(id, out data) && create)
-		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_0 = __this->___m_VRRayPointerData_40;
+		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_0 = __this->___m_VRRayPointerData_42;
 		int32_t L_1 = ___id0;
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D** L_2 = ___data1;
 		NullCheck(L_0);
@@ -19970,7 +19976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInputModule_GetPointerData_m1D35FE2BE
 		*((RuntimeObject**)L_5) = (RuntimeObject*)L_8;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_5, (void*)(RuntimeObject*)L_8);
 		// m_VRRayPointerData.Add(id, data);
-		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_10 = __this->___m_VRRayPointerData_40;
+		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_10 = __this->___m_VRRayPointerData_42;
 		int32_t L_11 = ___id0;
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D** L_12 = ___data1;
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D* L_13 = *((OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D**)L_12);
@@ -20077,7 +20083,7 @@ IL_002a_1:
 IL_0043:
 	{
 		// foreach (var pointer in m_VRRayPointerData.Values)
-		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_7 = __this->___m_VRRayPointerData_40;
+		Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* L_7 = __this->___m_VRRayPointerData_42;
 		NullCheck(L_7);
 		ValueCollection_t7F9AC80C05B75661CEC6285A1325DAA197C47EBB* L_8;
 		L_8 = Dictionary_2_get_Values_m1E6873716F54341B48F90A1BAD7909BF8DF33429(L_7, Dictionary_2_get_Values_m1E6873716F54341B48F90A1BAD7909BF8DF33429_RuntimeMethod_var);
@@ -20390,7 +20396,7 @@ IL_00f1:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = L_47.___worldPosition_7;
 		V_9 = L_48;
 		// if (performSphereCastForGazepointer)
-		bool L_49 = __this->___performSphereCastForGazepointer_21;
+		bool L_49 = __this->___performSphereCastForGazepointer_23;
 		if (!L_49)
 		{
 			goto IL_015c;
@@ -20406,7 +20412,7 @@ IL_00f1:
 		OVRPhysicsRaycaster_t1F411E5D373213271255DCD0AC8BB8B5A6D15EB7* L_51 = V_3;
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D* L_52 = V_0;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_53 = V_10;
-		float L_54 = __this->___m_SpherecastRadius_30;
+		float L_54 = __this->___m_SpherecastRadius_32;
 		NullCheck(L_51);
 		OVRPhysicsRaycaster_Spherecast_m5C0B2A941C9D1F9C92A2AD1026510DC5D64E9945(L_51, L_52, L_53, L_54, NULL);
 		// if (results.Count > 0 && results[0].distance < raycast.distance)
@@ -20493,7 +20499,7 @@ IL_018c:
 		PointerEventData_set_button_m77DA0291BA43CB813FE83752D826AF3982C81601_inline(L_83, 2, NULL);
 		// m_MouseState.SetButtonState(PointerEventData.InputButton.Left,
 		//     GetGazeButtonState(), leftData);
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_84 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_84 = __this->___m_MouseState_43;
 		int32_t L_85;
 		L_85 = VirtualFuncInvoker0< int32_t >::Invoke(32 /* UnityEngine.EventSystems.PointerEventData/FramePressState UnityEngine.EventSystems.OVRInputModule::GetGazeButtonState() */, __this);
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D* L_86 = V_0;
@@ -20501,18 +20507,18 @@ IL_018c:
 		MouseState_SetButtonState_m72DA468C8D10E76923FA5F993BBDBCFFF57E4326(L_84, 0, L_85, L_86, NULL);
 		// m_MouseState.SetButtonState(PointerEventData.InputButton.Right,
 		//     PointerEventData.FramePressState.NotChanged, rightData);
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_87 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_87 = __this->___m_MouseState_43;
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D* L_88 = V_4;
 		NullCheck(L_87);
 		MouseState_SetButtonState_m72DA468C8D10E76923FA5F993BBDBCFFF57E4326(L_87, 1, 3, L_88, NULL);
 		// m_MouseState.SetButtonState(PointerEventData.InputButton.Middle,
 		//     PointerEventData.FramePressState.NotChanged, middleData);
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_89 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_89 = __this->___m_MouseState_43;
 		OVRPointerEventData_t16F6545720F0956B5AAA7A38FA81CF02E7F37B6D* L_90 = V_5;
 		NullCheck(L_89);
 		MouseState_SetButtonState_m72DA468C8D10E76923FA5F993BBDBCFFF57E4326(L_89, 2, 3, L_90, NULL);
 		// return m_MouseState;
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_91 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_91 = __this->___m_MouseState_43;
 		return L_91;
 	}
 }
@@ -20560,7 +20566,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MouseState_tCCE70861DE1EEECF949AFE8E2A922541D
 		NullCheck(L_6);
 		PointerEventData_set_button_m77DA0291BA43CB813FE83752D826AF3982C81601_inline(L_6, 0, NULL);
 		// if (activeGraphicRaycaster)
-		OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* L_7 = __this->___activeGraphicRaycaster_28;
+		OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* L_7 = __this->___activeGraphicRaycaster_30;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
 		L_8 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_7, NULL);
@@ -20571,7 +20577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MouseState_tCCE70861DE1EEECF949AFE8E2A922541D
 	}
 	{
 		// activeGraphicRaycaster.RaycastPointer(leftData, m_RaycastResultCache);
-		OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* L_9 = __this->___activeGraphicRaycaster_28;
+		OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* L_9 = __this->___activeGraphicRaycaster_30;
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_10 = V_0;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_11 = ((BaseInputModule_tF3B7C22AF1419B2AC9ECE6589357DC1B88ED96B1*)__this)->___m_RaycastResultCache_4;
 		NullCheck(L_9);
@@ -20655,28 +20661,28 @@ IL_00a6:
 		NullCheck(L_38);
 		PointerEventData_set_button_m77DA0291BA43CB813FE83752D826AF3982C81601_inline(L_38, 2, NULL);
 		// m_MouseState.SetButtonState(PointerEventData.InputButton.Left, StateForMouseButton(0), leftData);
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_39 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_39 = __this->___m_MouseState_43;
 		int32_t L_40;
 		L_40 = PointerInputModule_StateForMouseButton_mED5B48F98F706160F97A26511FB82BD84DBAB0CF(__this, 0, NULL);
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_41 = V_0;
 		NullCheck(L_39);
 		MouseState_SetButtonState_m72DA468C8D10E76923FA5F993BBDBCFFF57E4326(L_39, 0, L_40, L_41, NULL);
 		// m_MouseState.SetButtonState(PointerEventData.InputButton.Right, StateForMouseButton(1), rightData);
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_42 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_42 = __this->___m_MouseState_43;
 		int32_t L_43;
 		L_43 = PointerInputModule_StateForMouseButton_mED5B48F98F706160F97A26511FB82BD84DBAB0CF(__this, 1, NULL);
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_44 = V_1;
 		NullCheck(L_42);
 		MouseState_SetButtonState_m72DA468C8D10E76923FA5F993BBDBCFFF57E4326(L_42, 1, L_43, L_44, NULL);
 		// m_MouseState.SetButtonState(PointerEventData.InputButton.Middle, StateForMouseButton(2), middleData);
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_45 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_45 = __this->___m_MouseState_43;
 		int32_t L_46;
 		L_46 = PointerInputModule_StateForMouseButton_mED5B48F98F706160F97A26511FB82BD84DBAB0CF(__this, 2, NULL);
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_47 = V_2;
 		NullCheck(L_45);
 		MouseState_SetButtonState_m72DA468C8D10E76923FA5F993BBDBCFFF57E4326(L_45, 2, L_46, L_47, NULL);
 		// return m_MouseState;
-		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_48 = __this->___m_MouseState_41;
+		MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* L_48 = __this->___m_MouseState_43;
 		return L_48;
 	}
 }
@@ -20750,7 +20756,7 @@ IL_000a:
 IL_0049:
 	{
 		// if (useSwipeScroll && ((Vector3)pointerEvent.GetSwipeStart() - Input.mousePosition).magnitude > swipeDragThreshold)
-		bool L_14 = __this->___useSwipeScroll_24;
+		bool L_14 = __this->___useSwipeScroll_26;
 		if (!L_14)
 		{
 			goto IL_0078;
@@ -20769,7 +20775,7 @@ IL_0049:
 		V_3 = L_19;
 		float L_20;
 		L_20 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_3), NULL);
-		float L_21 = __this->___swipeDragThreshold_25;
+		float L_21 = __this->___swipeDragThreshold_27;
 		if ((!(((float)L_20) > ((float)L_21))))
 		{
 			goto IL_0078;
@@ -20823,7 +20829,7 @@ IL_0078:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_2;
 		float L_39;
 		L_39 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_31, L_38, NULL);
-		float L_40 = __this->___angleDragThreshold_29;
+		float L_40 = __this->___angleDragThreshold_31;
 		float L_41;
 		L_41 = cosf(((float)il2cpp_codegen_multiply((0.0174532924f), L_40)));
 		return (bool)((((float)L_39) < ((float)L_41))? 1 : 0);
@@ -20864,7 +20870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		// if (useSwipeScroll)
-		bool L_0 = __this->___useSwipeScroll_24;
+		bool L_0 = __this->___useSwipeScroll_26;
 		if (!L_0)
 		{
 			goto IL_0049;
@@ -20883,7 +20889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		L_5 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_2, L_4, NULL);
 		V_0 = L_5;
 		// if (InvertSwipeXAxis)
-		bool L_6 = __this->___InvertSwipeXAxis_27;
+		bool L_6 = __this->___InvertSwipeXAxis_29;
 		if (!L_6)
 		{
 			goto IL_0036;
@@ -20902,7 +20908,7 @@ IL_0036:
 		// return originalPosition + delta * swipeDragScale;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10 = ___originalPosition0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = V_0;
-		float L_12 = __this->___swipeDragScale_26;
+		float L_12 = __this->___swipeDragScale_28;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
 		L_13 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_11, L_12, NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_14;
@@ -21279,7 +21285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		// Vector2 scrollDelta = new Vector2();
 		il2cpp_codegen_initobj((&V_0), sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7));
 		// if (useRightStickScroll)
-		bool L_0 = __this->___useRightStickScroll_22;
+		bool L_0 = __this->___useRightStickScroll_24;
 		if (!L_0)
 		{
 			goto IL_005c;
@@ -21296,7 +21302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		float L_3 = L_2.___x_0;
 		float L_4;
 		L_4 = fabsf(L_3);
-		float L_5 = __this->___rightStickDeadZone_23;
+		float L_5 = __this->___rightStickDeadZone_25;
 		if ((!(((float)L_4) < ((float)L_5))))
 		{
 			goto IL_003b;
@@ -21314,7 +21320,7 @@ IL_003b:
 		float L_7 = L_6.___y_1;
 		float L_8;
 		L_8 = fabsf(L_7);
-		float L_9 = __this->___rightStickDeadZone_23;
+		float L_9 = __this->___rightStickDeadZone_25;
 		if ((!(((float)L_8) < ((float)L_9))))
 		{
 			goto IL_005a;

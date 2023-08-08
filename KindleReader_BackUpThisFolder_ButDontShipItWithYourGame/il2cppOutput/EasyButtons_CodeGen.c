@@ -41,14 +41,14 @@ static Il2CppMethodPointer s_methodPointers[8] =
 };
 static const int32_t s_InvokerIndices[8] = 
 {
-	6409,
-	5154,
-	6256,
-	5118,
-	6256,
-	5118,
-	6199,
-	5056,
+	5995,
+	4817,
+	5843,
+	4781,
+	5843,
+	4781,
+	5792,
+	4724,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_EasyButtons_CodeGenModule;
 const Il2CppCodeGenModule g_EasyButtons_CodeGenModule = 

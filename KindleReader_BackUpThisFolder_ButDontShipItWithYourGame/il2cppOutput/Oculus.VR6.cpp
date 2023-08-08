@@ -5421,48 +5421,52 @@ struct OVRInputModule_tA57D6FB43C84C28A9A6300E1B97F01703A87FD8A  : public Pointe
 	int32_t ___joyPadClickButton_19;
 	// UnityEngine.KeyCode UnityEngine.EventSystems.OVRInputModule::gazeClickKey
 	int32_t ___gazeClickKey_20;
+	// OVRHand UnityEngine.EventSystems.OVRInputModule::hand_L
+	OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___hand_L_21;
+	// OVRHand UnityEngine.EventSystems.OVRInputModule::hand_R
+	OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___hand_R_22;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::performSphereCastForGazepointer
-	bool ___performSphereCastForGazepointer_21;
+	bool ___performSphereCastForGazepointer_23;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::useRightStickScroll
-	bool ___useRightStickScroll_22;
+	bool ___useRightStickScroll_24;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::rightStickDeadZone
-	float ___rightStickDeadZone_23;
+	float ___rightStickDeadZone_25;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::useSwipeScroll
-	bool ___useSwipeScroll_24;
+	bool ___useSwipeScroll_26;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::swipeDragThreshold
-	float ___swipeDragThreshold_25;
+	float ___swipeDragThreshold_27;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::swipeDragScale
-	float ___swipeDragScale_26;
+	float ___swipeDragScale_28;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::InvertSwipeXAxis
-	bool ___InvertSwipeXAxis_27;
+	bool ___InvertSwipeXAxis_29;
 	// OVRRaycaster UnityEngine.EventSystems.OVRInputModule::activeGraphicRaycaster
-	OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* ___activeGraphicRaycaster_28;
+	OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* ___activeGraphicRaycaster_30;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::angleDragThreshold
-	float ___angleDragThreshold_29;
+	float ___angleDragThreshold_31;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_SpherecastRadius
-	float ___m_SpherecastRadius_30;
+	float ___m_SpherecastRadius_32;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_NextAction
-	float ___m_NextAction_31;
+	float ___m_NextAction_33;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.OVRInputModule::m_LastMousePosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_LastMousePosition_32;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_LastMousePosition_34;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.OVRInputModule::m_MousePosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_MousePosition_33;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_MousePosition_35;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_HorizontalAxis
-	String_t* ___m_HorizontalAxis_34;
+	String_t* ___m_HorizontalAxis_36;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_VerticalAxis
-	String_t* ___m_VerticalAxis_35;
+	String_t* ___m_VerticalAxis_37;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_SubmitButton
-	String_t* ___m_SubmitButton_36;
+	String_t* ___m_SubmitButton_38;
 	// System.String UnityEngine.EventSystems.OVRInputModule::m_CancelButton
-	String_t* ___m_CancelButton_37;
+	String_t* ___m_CancelButton_39;
 	// System.Single UnityEngine.EventSystems.OVRInputModule::m_InputActionsPerSecond
-	float ___m_InputActionsPerSecond_38;
+	float ___m_InputActionsPerSecond_40;
 	// System.Boolean UnityEngine.EventSystems.OVRInputModule::m_AllowActivationOnMobileDevice
-	bool ___m_AllowActivationOnMobileDevice_39;
+	bool ___m_AllowActivationOnMobileDevice_41;
 	// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.OVRPointerEventData> UnityEngine.EventSystems.OVRInputModule::m_VRRayPointerData
-	Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* ___m_VRRayPointerData_40;
+	Dictionary_2_t9422155976AA5669B953F2FA792954DC4DFD250B* ___m_VRRayPointerData_42;
 	// UnityEngine.EventSystems.PointerInputModule/MouseState UnityEngine.EventSystems.OVRInputModule::m_MouseState
-	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_41;
+	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_43;
 };
 
 // OVRRaycaster
@@ -20330,7 +20334,7 @@ IL_0093_2:
 						L_32 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_31, NULL);
 						NullCheck(L_27);
 						RuntimeObject* L_33;
-						L_33 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(25 /* System.IAsyncResult System.IO.Stream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, L_27, L_28, 0, ((int32_t)(((RuntimeArray*)L_29)->max_length)), L_30, L_32);
+						L_33 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(18 /* System.IAsyncResult System.IO.Stream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, L_27, L_28, 0, ((int32_t)(((RuntimeArray*)L_29)->max_length)), L_30, L_32);
 						// }
 						goto IL_00fd_2;
 					}// end try (depth: 3)
@@ -20367,7 +20371,7 @@ CATCH_00cc_2:
 						NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_39;
 						L_39 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_38, NULL);
 						NullCheck(L_39);
-						VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_39);
+						VirtualActionInvoker0::Invoke(13 /* System.Void System.IO.Stream::Close() */, L_39);
 						// client.Close();
 						TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_40 = V_6;
 						NullCheck(L_40);
@@ -20428,7 +20432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRNetworkTcpServer_DoWriteDataCallback_
 		// stream.EndWrite(ar);
 		RuntimeObject* L_2 = ___ar0;
 		NullCheck(((NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)IsInstClass((RuntimeObject*)L_1, NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var)));
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(26 /* System.Void System.IO.Stream::EndWrite(System.IAsyncResult) */, ((NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)IsInstClass((RuntimeObject*)L_1, NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var)), L_2);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19 /* System.Void System.IO.Stream::EndWrite(System.IAsyncResult) */, ((NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)IsInstClass((RuntimeObject*)L_1, NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var)), L_2);
 		// }
 		return;
 	}
@@ -20749,7 +20753,7 @@ IL_0020:
 		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_4;
 		L_4 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_3, NULL);
 		NullCheck(L_4);
-		VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_4);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.IO.Stream::Close() */, L_4);
 		// tcpClient.Close();
 		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_5 = __this->___tcpClient_2;
 		NullCheck(L_5);
@@ -20879,7 +20883,7 @@ IL_0016:
 		L_7 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_6, NULL);
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = VirtualFuncInvoker0< bool >::Invoke(36 /* System.Boolean System.Net.Sockets.NetworkStream::get_DataAvailable() */, L_7);
+		L_8 = VirtualFuncInvoker0< bool >::Invoke(27 /* System.Boolean System.Net.Sockets.NetworkStream::get_DataAvailable() */, L_7);
 		if (!L_8)
 		{
 			goto IL_00b0;
@@ -20936,7 +20940,7 @@ IL_005b:
 		L_23 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_22, NULL);
 		NullCheck(L_14);
 		RuntimeObject* L_24;
-		L_24 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(21 /* System.IAsyncResult System.IO.Stream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, L_14, L_18, L_19, L_20, L_21, L_23);
+		L_24 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(16 /* System.IAsyncResult System.IO.Stream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, L_14, L_18, L_19, L_20, L_21, L_23);
 	}
 
 IL_00b0:
@@ -20984,7 +20988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRNetworkTcpClient_OnReadDataCallback_m
 			RuntimeObject* L_3 = ___ar0;
 			NullCheck(L_2);
 			int32_t L_4;
-			L_4 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(22 /* System.Int32 System.IO.Stream::EndRead(System.IAsyncResult) */, L_2, L_3);
+			L_4 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(17 /* System.Int32 System.IO.Stream::EndRead(System.IAsyncResult) */, L_2, L_3);
 			V_1 = L_4;
 			// receivedBufferDataSize += numBytes;
 			int32_t L_5 = __this->___receivedBufferDataSize_5;
@@ -24901,7 +24905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRRaycaster_IsFocussed_mB1A42E38FBEDF9F
 	{
 		OVRInputModule_tA57D6FB43C84C28A9A6300E1B97F01703A87FD8A* L_4 = V_0;
 		NullCheck(L_4);
-		OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* L_5 = L_4->___activeGraphicRaycaster_28;
+		OVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182* L_5 = L_4->___activeGraphicRaycaster_30;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_5, __this, NULL);
@@ -24958,8 +24962,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRRaycaster_OnPointerEnter_m4CDCA760A36
 		// inputModule.activeGraphicRaycaster = this;
 		OVRInputModule_tA57D6FB43C84C28A9A6300E1B97F01703A87FD8A* L_6 = V_0;
 		NullCheck(L_6);
-		L_6->___activeGraphicRaycaster_28 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_6->___activeGraphicRaycaster_28), (void*)__this);
+		L_6->___activeGraphicRaycaster_30 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_6->___activeGraphicRaycaster_30), (void*)__this);
 	}
 
 IL_0028:

@@ -37,6 +37,7 @@ public class WebViewController : MonoBehaviour
         else
         {
             PlayerPrefs.SetString("amazon_domain", "https://read.amazon.co.jp/kindle-library");
+            URL = PlayerPrefs.GetString("amazon_domain");
         }
 
         Debug.Log("Debug09" + URL);

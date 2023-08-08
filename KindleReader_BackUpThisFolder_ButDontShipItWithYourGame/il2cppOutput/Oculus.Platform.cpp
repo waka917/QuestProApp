@@ -9366,16 +9366,10 @@ IL2CPP_EXTERN_C uint64_t CDECL ovr_Livestreaming_IsAllowedForApplication(intptr_
 IL2CPP_EXTERN_C uint64_t CDECL ovr_Livestreaming_StartPartyStream();
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
-IL2CPP_EXTERN_C uint64_t CDECL ovr_Livestreaming_StartStream(int32_t, int32_t);
-#endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
 IL2CPP_EXTERN_C uint64_t CDECL ovr_Livestreaming_StopPartyStream();
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
 IL2CPP_EXTERN_C uint64_t CDECL ovr_Livestreaming_StopStream();
-#endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
-IL2CPP_EXTERN_C uint64_t CDECL ovr_Livestreaming_UpdateMicStatus(int32_t);
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
 IL2CPP_EXTERN_C uint64_t CDECL ovr_Media_ShareToFacebook(intptr_t, intptr_t, int32_t);
@@ -21254,29 +21248,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Livestreaming_StartPartyStr
 
 	return returnValue;
 }
-// System.UInt64 Oculus.Platform.CAPI::ovr_Livestreaming_StartStream(Oculus.Platform.LivestreamingAudience,Oculus.Platform.LivestreamingMicrophoneStatus)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Livestreaming_StartStream_mAD0987B7BE807DDC8D9163D21F86B62C34E024AB (int32_t ___audience0, int32_t ___micStatus1, const RuntimeMethod* method) 
-{
-	typedef uint64_t (CDECL *PInvokeFunc) (int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_ovrplatformloader_INTERNAL
-	static PInvokeFunc il2cppPInvokeFunc;
-	if (il2cppPInvokeFunc == NULL)
-	{
-		int parameterSize = sizeof(int32_t) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("ovrplatformloader"), "ovr_Livestreaming_StartStream", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
-		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
-	}
-	#endif
-
-	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
-	uint64_t returnValue = reinterpret_cast<PInvokeFunc>(ovr_Livestreaming_StartStream)(___audience0, ___micStatus1);
-	#else
-	uint64_t returnValue = il2cppPInvokeFunc(___audience0, ___micStatus1);
-	#endif
-
-	return returnValue;
-}
 // System.UInt64 Oculus.Platform.CAPI::ovr_Livestreaming_StopPartyStream()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Livestreaming_StopPartyStream_m4F32C7C3B47777ABDA0571CDCEB157DED12B6AE5 (const RuntimeMethod* method) 
 {
@@ -21319,29 +21290,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Livestreaming_StopStream_m9
 	uint64_t returnValue = reinterpret_cast<PInvokeFunc>(ovr_Livestreaming_StopStream)();
 	#else
 	uint64_t returnValue = il2cppPInvokeFunc();
-	#endif
-
-	return returnValue;
-}
-// System.UInt64 Oculus.Platform.CAPI::ovr_Livestreaming_UpdateMicStatus(Oculus.Platform.LivestreamingMicrophoneStatus)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Livestreaming_UpdateMicStatus_m6A53B9243D65A0D27B3D3DA8FCB29BF9A54B222C (int32_t ___micStatus0, const RuntimeMethod* method) 
-{
-	typedef uint64_t (CDECL *PInvokeFunc) (int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_ovrplatformloader_INTERNAL
-	static PInvokeFunc il2cppPInvokeFunc;
-	if (il2cppPInvokeFunc == NULL)
-	{
-		int parameterSize = sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("ovrplatformloader"), "ovr_Livestreaming_UpdateMicStatus", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
-		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
-	}
-	#endif
-
-	// Native function invocation
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_ovrplatformloader_INTERNAL
-	uint64_t returnValue = reinterpret_cast<PInvokeFunc>(ovr_Livestreaming_UpdateMicStatus)(___micStatus0);
-	#else
-	uint64_t returnValue = il2cppPInvokeFunc(___micStatus0);
 	#endif
 
 	return returnValue;

@@ -716,6 +716,7 @@ IL2CPP_EXTERN_C RuntimeClass* ColorState_t9CB80C9011357A22FEFDEB8F630B8267193BA7
 IL2CPP_EXTERN_C RuntimeClass* ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ComputeBuffer_t51EADA9015EBCC1B982C5584E9AB2734415A8233_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DebugGizmos_t4647554591DE598C19228C60E9C788C39335D027_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t0F51069FC80641700754E871EC5B079226690979_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t7282FC4E87B436212B65017BB1C9B2E776BB322D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tA56A4440970F8919E006B441E69B79820CA38498_il2cpp_TypeInfo_var;
@@ -799,17 +800,21 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B5A243986C06BBC03C4F27D3807F6460D990732;
+IL2CPP_EXTERN_C String_t* _stringLiteral1B87866F893E52F181426B1010DE5C0671BD20E5;
 IL2CPP_EXTERN_C String_t* _stringLiteral21627BBE8EBCFC824DEF784AC25AB0E7B675D01D;
 IL2CPP_EXTERN_C String_t* _stringLiteral23126431E34FBD706C600DA5B55BA28BF4CC5988;
 IL2CPP_EXTERN_C String_t* _stringLiteral2537985BD87B6DD0B11719ECE1935B4111991DC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral27F9686B56E281CB7C36165C55F88ECD7FB62114;
 IL2CPP_EXTERN_C String_t* _stringLiteral3EAE1AE7161EFAF0FA858C397A84569B405AF9AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral3F42ED00D84DBC7A3B4658065DEA62873778201F;
+IL2CPP_EXTERN_C String_t* _stringLiteral427D620AF1D8E9E60DDED94E3FC4619F7AC09097;
 IL2CPP_EXTERN_C String_t* _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE;
 IL2CPP_EXTERN_C String_t* _stringLiteral482461BFC1D060ED423AE39F128F009CEAB25592;
 IL2CPP_EXTERN_C String_t* _stringLiteral619878BF84306B9BCF64F7438040A32C2D8F602C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB2A2A23C0F95CC4BF23BDB0980D559F59E054C4B;
+IL2CPP_EXTERN_C String_t* _stringLiteralDAA73BA6C8C2F01FCCD96287E2F484D2FC85F6E4;
 IL2CPP_EXTERN_C String_t* _stringLiteralE9E6A6B1BF11DDD1F857D81F43373B3FF279FF59;
+IL2CPP_EXTERN_C String_t* _stringLiteralFB3468B835948BD00F3BA2B7F99339F6D01608B8;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisPointer_tE5E21974DC2475F0861FD32A068F57A99284EF74_m8F6825A2C8718CC366F83584CE966F7CC4D71940_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CenterEyeOffset_HandleUpdated_mFF9AE4856D5BE31210BED74B78FA2F5F508D5BB3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisGrabbable_tC5F191DABDA6ADE2D8270476D37B4E122C1387D3_m7C9BD10AE0F62A09AE091A8C0A9C51FF0F9C0BAE_RuntimeMethod_var;
@@ -6574,6 +6579,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PointerEventData_set_delta_m
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___a0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___b1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.EventSystems.PointerEventData::set_button(UnityEngine.EventSystems.PointerEventData/InputButton)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PointerEventData_set_button_m77DA0291BA43CB813FE83752D826AF3982C81601_inline (PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // System.Void Oculus.Interaction.PointableCanvasModule::ProcessPointers(System.Collections.Generic.ICollection`1<Oculus.Interaction.PointableCanvasModule/Pointer>,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_ProcessPointers_mA3B1321E5AE963144666D05DAD3B668456941AF1 (PointableCanvasModule_t1AF970053455C50FE9729258EB7EB3FB922C5729* __this, RuntimeObject* ___pointers0, bool ___clearAndReleasePointers1, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Interaction.PointableCanvasModule/Pointer>::get_Values()
@@ -30055,10 +30062,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_Process_m527EE8C4E
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Values_m29EB11EA4046261A2720336541F5BE0CA7184B87_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral427D620AF1D8E9E60DDED94E3FC4619F7AC09097);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// Debug.Log("test09-1");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral427D620AF1D8E9E60DDED94E3FC4619F7AC09097, NULL);
 		// ProcessPointers(_pointersForDeletion, true);
 		List_1_t2615E51BD7A6D949BEC5B59AC096D10C698E84E5* L_0 = __this->____pointersForDeletion_26;
 		PointableCanvasModule_ProcessPointers_mA3B1321E5AE963144666D05DAD3B668456941AF1(__this, L_0, (bool)1, NULL);
@@ -30078,8 +30090,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_ProcessPointers_mA
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICollection_1_tA8D7AE71AB389EF225CAE469DB5D2681180CF421_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerU5BU5D_tF63D645DF3E4C69345253743428A408E5706E8F4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDAA73BA6C8C2F01FCCD96287E2F484D2FC85F6E4);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
@@ -30151,7 +30165,7 @@ IL_0038:
 		PointerU5BU5D_tF63D645DF3E4C69345253743428A408E5706E8F4* L_11 = __this->____pointersToProcessScratch_28;
 		V_1 = L_11;
 		V_2 = 0;
-		goto IL_0053;
+		goto IL_005d;
 	}
 
 IL_0043:
@@ -30163,6 +30177,9 @@ IL_0043:
 		int32_t L_14 = L_13;
 		Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
 		V_3 = L_15;
+		// Debug.Log("test09-2");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralDAA73BA6C8C2F01FCCD96287E2F484D2FC85F6E4, NULL);
 		// ProcessPointer(pointer, clearAndReleasePointers);
 		Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* L_16 = V_3;
 		bool L_17 = ___clearAndReleasePointers1;
@@ -30171,7 +30188,7 @@ IL_0043:
 		V_2 = ((int32_t)il2cpp_codegen_add(L_18, 1));
 	}
 
-IL_0053:
+IL_005d:
 	{
 		// foreach (Pointer pointer in _pointersToProcessScratch)
 		int32_t L_19 = V_2;
@@ -30190,11 +30207,21 @@ IL_0053:
 // System.Void Oculus.Interaction.PointableCanvasModule::ProcessPointer(Oculus.Interaction.PointableCanvasModule/Pointer,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_ProcessPointer_mA388A9E054CEC9ED86658F1B0AF2782F1FA8222F (PointableCanvasModule_t1AF970053455C50FE9729258EB7EB3FB922C5729* __this, Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* ___pointer0, bool ___forceRelease1, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB3468B835948BD00F3BA2B7F99339F6D01608B8);
+		s_Il2CppMethodInitialized = true;
+	}
 	bool V_0 = false;
 	bool V_1 = false;
 	bool V_2 = false;
 	PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* V_3 = NULL;
 	{
+		// Debug.Log("test09-3");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralFB3468B835948BD00F3BA2B7F99339F6D01608B8, NULL);
 		// bool pressed = false;
 		V_0 = (bool)0;
 		// bool released = false;
@@ -30230,7 +30257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_ProcessPointer_mA3
 		bool L_11 = V_1;
 		if (L_11)
 		{
-			goto IL_0042;
+			goto IL_004c;
 		}
 	}
 	{
@@ -30240,10 +30267,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_ProcessPointer_mA3
 		// ProcessDrag(pointerEventData);
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_13 = V_3;
 		VirtualActionInvoker1< PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* >::Invoke(30 /* System.Void UnityEngine.EventSystems.PointerInputModule::ProcessDrag(UnityEngine.EventSystems.PointerEventData) */, __this, L_13);
-		goto IL_0051;
+		goto IL_005b;
 	}
 
-IL_0042:
+IL_004c:
 	{
 		// HandlePointerExitAndEnter(pointerEventData, null);
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_14 = V_3;
@@ -30253,7 +30280,7 @@ IL_0042:
 		PointerInputModule_RemovePointerData_m012713A1B4511855549793D6BA2B7998134B1BE9(__this, L_15, NULL);
 	}
 
-IL_0051:
+IL_005b:
 	{
 		// HandleSelectableHover(pointer, wasDragging);
 		Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* L_16 = ___pointer0;
@@ -30275,11 +30302,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_HandleSelectableHo
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExecuteEvents_GetEventHandler_TisISelectHandler_tA3030316ED9DF4943103C3101AD95FCD7765700D_m52B7AEEF7C492E4D682E977FFEC06325F230EE50_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExecuteEvents_t74DCF8B83743EE2773ACF182344612A048E2CC59_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointableCanvasEventArgs_t036DFF4AF087BDCF5C79C536F8396C19AEE10552_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointableCanvasModule_t1AF970053455C50FE9729258EB7EB3FB922C5729_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1B87866F893E52F181426B1010DE5C0671BD20E5);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
@@ -30292,6 +30321,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_HandleSelectableHo
 	Action_1_t9415BE8888B0BB013CEAF59CC934C67E88A6B115* G_B9_0 = NULL;
 	Action_1_t9415BE8888B0BB013CEAF59CC934C67E88A6B115* G_B8_0 = NULL;
 	{
+		// Debug.Log("Test09-4");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral1B87866F893E52F181426B1010DE5C0671BD20E5, NULL);
 		// bool dragging = pointer.PointerEventData.dragging || wasDragging;
 		Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* L_0 = ___pointer0;
 		NullCheck(L_0);
@@ -30336,7 +30368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_HandleSelectableHo
 		L_14 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_13, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_14)
 		{
-			goto IL_0069;
+			goto IL_0073;
 		}
 	}
 	{
@@ -30347,7 +30379,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_HandleSelectableHo
 		L_17 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_15, L_16, NULL);
 		if (!L_17)
 		{
-			goto IL_0069;
+			goto IL_0073;
 		}
 	}
 	{
@@ -30358,14 +30390,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointableCanvasModule_HandleSelectableHo
 		if (L_19)
 		{
 			G_B4_0 = L_19;
-			goto IL_0051;
+			goto IL_005b;
 		}
 	}
 	{
 		return;
 	}
 
-IL_0051:
+IL_005b:
 	{
 		Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* L_20 = ___pointer0;
 		NullCheck(L_20);
@@ -30384,7 +30416,7 @@ IL_0051:
 		return;
 	}
 
-IL_0069:
+IL_0073:
 	{
 		// else if (prevHoveredSelectable != null && newHoveredSelectable == null)
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = V_1;
@@ -30393,7 +30425,7 @@ IL_0069:
 		L_27 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_26, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_27)
 		{
-			goto IL_009c;
+			goto IL_00a6;
 		}
 	}
 	{
@@ -30403,7 +30435,7 @@ IL_0069:
 		L_29 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_28, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_29)
 		{
-			goto IL_009c;
+			goto IL_00a6;
 		}
 	}
 	{
@@ -30414,14 +30446,14 @@ IL_0069:
 		if (L_31)
 		{
 			G_B9_0 = L_31;
-			goto IL_0085;
+			goto IL_008f;
 		}
 	}
 	{
 		return;
 	}
 
-IL_0085:
+IL_008f:
 	{
 		Pointer_tE5E21974DC2475F0861FD32A068F57A99284EF74* L_32 = ___pointer0;
 		NullCheck(L_32);
@@ -30439,7 +30471,7 @@ IL_0085:
 		Action_1_Invoke_m60217D1A6B8E80B5C5BA1B0CBEB040F6EDFBDAC4_inline(G_B9_0, L_37, NULL);
 	}
 
-IL_009c:
+IL_00a6:
 	{
 		// }
 		return;

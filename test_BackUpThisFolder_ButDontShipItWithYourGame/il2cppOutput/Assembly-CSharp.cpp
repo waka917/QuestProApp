@@ -11410,20 +11410,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebViewController_load_amazonUS_mD337DF7
 	}
 	float V_0 = 0.0f;
 	{
-		// float resolution = CanvasWebViewPrefab.Resolution;
+		// CanvasWebViewPrefab.WebView.LoadUrl("https://read.amazon.com/kindle-library");
 		CanvasWebViewPrefab_t621E38DED690A6F4D846324B542B1DFF5325CE24* L_0 = __this->___CanvasWebViewPrefab_5;
 		NullCheck(L_0);
-		float L_1 = L_0->___Resolution_46;
-		V_0 = L_1;
-		// CanvasWebViewPrefab.WebView.LoadUrl("https://read.amazon.com/kindle-library");
-		CanvasWebViewPrefab_t621E38DED690A6F4D846324B542B1DFF5325CE24* L_2 = __this->___CanvasWebViewPrefab_5;
-		NullCheck(L_2);
-		RuntimeObject* L_3;
-		L_3 = BaseWebViewPrefab_get_WebView_mFBD192899F673B2EDD4E7C43802FD0AC3D7D6BFE(L_2, NULL);
-		NullCheck(L_3);
-		InterfaceActionInvoker1< String_t* >::Invoke(42 /* System.Void Vuplex.WebView.IWebView::LoadUrl(System.String) */, IWebView_t61CE59CF1FEEB7B5F8F4CFE7A517B6BFB524CD0E_il2cpp_TypeInfo_var, L_3, _stringLiteral04CEE309CEEC0B60E4242329238DBFAD418465EA);
+		RuntimeObject* L_1;
+		L_1 = BaseWebViewPrefab_get_WebView_mFBD192899F673B2EDD4E7C43802FD0AC3D7D6BFE(L_0, NULL);
+		NullCheck(L_1);
+		InterfaceActionInvoker1< String_t* >::Invoke(42 /* System.Void Vuplex.WebView.IWebView::LoadUrl(System.String) */, IWebView_t61CE59CF1FEEB7B5F8F4CFE7A517B6BFB524CD0E_il2cpp_TypeInfo_var, L_1, _stringLiteral04CEE309CEEC0B60E4242329238DBFAD418465EA);
 		// PlayerPrefs.SetString("amazon_domain", "https://read.amazon.com/kindle-library");
 		PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256(_stringLiteral247D31C8AF6BD449E5C3880A5ACF05C7141F20D4, _stringLiteral04CEE309CEEC0B60E4242329238DBFAD418465EA, NULL);
+		// float resolution = CanvasWebViewPrefab.Resolution;
+		CanvasWebViewPrefab_t621E38DED690A6F4D846324B542B1DFF5325CE24* L_2 = __this->___CanvasWebViewPrefab_5;
+		NullCheck(L_2);
+		float L_3 = L_2->___Resolution_46;
+		V_0 = L_3;
 		// Debug.Log("Debug10" + resolution);
 		String_t* L_4;
 		L_4 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_0), NULL);
@@ -11569,7 +11569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__3_MoveNext_m44AAA5701A7E4D
 			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_3))->___m_task_0), (void*)NULL);
 			AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_10 = (&__this->___U3CU3Et__builder_1);
 			AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CStartU3Ed__3_t241E9B16BF84B1B4843818B9D91C8558E86FD14D_mFEA37A3DAA7EFD3AD92BA1DD681364B8F17B13D3(L_10, (&V_2), __this, AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CStartU3Ed__3_t241E9B16BF84B1B4843818B9D91C8558E86FD14D_mFEA37A3DAA7EFD3AD92BA1DD681364B8F17B13D3_RuntimeMethod_var);
-			goto IL_00f5;
+			goto IL_0105;
 		}
 
 IL_004e_1:
@@ -11602,38 +11602,45 @@ IL_006a_1:
 			NullCheck(L_15);
 			L_15->___URL_6 = L_16;
 			Il2CppCodeGenWriteBarrier((void**)(&L_15->___URL_6), (void*)L_16);
-			goto IL_009e_1;
+			goto IL_00ae_1;
 		}
 
 IL_008f_1:
 		{
 			// PlayerPrefs.SetString("amazon_domain", "https://read.amazon.co.jp/kindle-library");
 			PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256(_stringLiteral247D31C8AF6BD449E5C3880A5ACF05C7141F20D4, _stringLiteral3ABD98F4575558BC22ECC33A511D478040E60C3D, NULL);
+			// URL = PlayerPrefs.GetString("amazon_domain");
+			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_17 = V_1;
+			String_t* L_18;
+			L_18 = PlayerPrefs_GetString_mA4C9F842BF77E5572AB20EA087C7048F870D02AE(_stringLiteral247D31C8AF6BD449E5C3880A5ACF05C7141F20D4, NULL);
+			NullCheck(L_17);
+			L_17->___URL_6 = L_18;
+			Il2CppCodeGenWriteBarrier((void**)(&L_17->___URL_6), (void*)L_18);
 		}
 
-IL_009e_1:
+IL_00ae_1:
 		{
 			// Debug.Log("Debug09" + URL);
-			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_17 = V_1;
-			NullCheck(L_17);
-			String_t* L_18 = L_17->___URL_6;
-			String_t* L_19;
-			L_19 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralFDB706B4543B6B195B62080EC387B3F06ED966CB, L_18, NULL);
+			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_19 = V_1;
+			NullCheck(L_19);
+			String_t* L_20 = L_19->___URL_6;
+			String_t* L_21;
+			L_21 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralFDB706B4543B6B195B62080EC387B3F06ED966CB, L_20, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_19, NULL);
+			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_21, NULL);
 			// CanvasWebViewPrefab.WebView.LoadUrl(URL);
-			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_20 = V_1;
-			NullCheck(L_20);
-			CanvasWebViewPrefab_t621E38DED690A6F4D846324B542B1DFF5325CE24* L_21 = L_20->___CanvasWebViewPrefab_5;
-			NullCheck(L_21);
-			RuntimeObject* L_22;
-			L_22 = BaseWebViewPrefab_get_WebView_mFBD192899F673B2EDD4E7C43802FD0AC3D7D6BFE(L_21, NULL);
-			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_23 = V_1;
-			NullCheck(L_23);
-			String_t* L_24 = L_23->___URL_6;
+			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_22 = V_1;
 			NullCheck(L_22);
-			InterfaceActionInvoker1< String_t* >::Invoke(42 /* System.Void Vuplex.WebView.IWebView::LoadUrl(System.String) */, IWebView_t61CE59CF1FEEB7B5F8F4CFE7A517B6BFB524CD0E_il2cpp_TypeInfo_var, L_22, L_24);
-			goto IL_00e2;
+			CanvasWebViewPrefab_t621E38DED690A6F4D846324B542B1DFF5325CE24* L_23 = L_22->___CanvasWebViewPrefab_5;
+			NullCheck(L_23);
+			RuntimeObject* L_24;
+			L_24 = BaseWebViewPrefab_get_WebView_mFBD192899F673B2EDD4E7C43802FD0AC3D7D6BFE(L_23, NULL);
+			WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* L_25 = V_1;
+			NullCheck(L_25);
+			String_t* L_26 = L_25->___URL_6;
+			NullCheck(L_24);
+			InterfaceActionInvoker1< String_t* >::Invoke(42 /* System.Void Vuplex.WebView.IWebView::LoadUrl(System.String) */, IWebView_t61CE59CF1FEEB7B5F8F4CFE7A517B6BFB524CD0E_il2cpp_TypeInfo_var, L_24, L_26);
+			goto IL_00f2;
 		}
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -11641,31 +11648,31 @@ IL_009e_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_00cb;
+			goto CATCH_00db;
 		}
 		throw e;
 	}
 
-CATCH_00cb:
+CATCH_00db:
 	{// begin catch(System.Exception)
 		V_3 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
 		__this->___U3CU3E1__state_0 = ((int32_t)-2);
-		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_25 = (&__this->___U3CU3Et__builder_1);
-		Exception_t* L_26 = V_3;
-		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_25, L_26, NULL);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_27 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_28 = V_3;
+		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_27, L_28, NULL);
 		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_00f5;
+		goto IL_0105;
 	}// end catch (depth: 1)
 
-IL_00e2:
+IL_00f2:
 	{
 		// }
 		__this->___U3CU3E1__state_0 = ((int32_t)-2);
-		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_27 = (&__this->___U3CU3Et__builder_1);
-		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_27, NULL);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_29 = (&__this->___U3CU3Et__builder_1);
+		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_29, NULL);
 	}
 
-IL_00f5:
+IL_0105:
 	{
 		return;
 	}
