@@ -56,13 +56,20 @@ public class EyeGazeController : MonoBehaviour
 
 
     void FixedUpdate()
-    {
-        RaycastHit hit;
-
-        Vector3 rayCastDirection = transform.TransformDirection(Vector3.forward) * rayDistance;
+    {   
         Debug.Log("test0-1");
 
-        if (Physics.Raycast(transform.position, rayCastDirection, out hit, Mathf.Infinity, layersToInclude))
+        var usingHand = OVRInput.IsControllerConnected(OVRInput.Controller.Hands);
+        if (!usingHand)
+        {
+            return;
+        }
+
+        RaycastHit hit;
+        Vector3 rayCastDirection = transform.TransformDirection(Vector3.forward) * rayDistance;
+        LayerMask layerMask = 1 << LayerMask.NameToLayer("Key")| 1 << LayerMask.NameToLayer("Reader");
+
+        if (Physics.Raycast(transform.position, rayCastDirection, out hit, Mathf.Infinity, layerMask))
         {
             /*
             UnSelect();
@@ -73,7 +80,7 @@ public class EyeGazeController : MonoBehaviour
             eyeInteractable.IsHovered = true;
             */
 
-            Debug.Log("test0-2");
+            Debug.Log("test0-2-1" + hit.collider.gameObject.name);
             _startPoint = transform.position;
             _endPoint = hit.point;
 
@@ -96,6 +103,7 @@ public class EyeGazeController : MonoBehaviour
             }
             else
             {
+                Debug.Log("test0-2-2");
                 Keyboard_UI.HoverOutCacheKey();
                 WebViewController.GazeReaderOut();
             }
@@ -124,6 +132,12 @@ public class EyeGazeController : MonoBehaviour
         }
         else
         {
+            // Keyレイヤーにhitしなかった場合
+            Debug.Log("test0-2-3");
+            //Keyboard_UI.HoverOutCacheKey();
+            //WebViewController.GazeReaderOut();
+
+
             /*
             lineRenderer.startColor = rayColorDefaultState;
             lineRenderer.endColor = rayColorDefaultState;

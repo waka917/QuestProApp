@@ -24,6 +24,12 @@ public class OculusInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var usingHand = OVRInput.IsControllerConnected(OVRInput.Controller.Hands);
+        var usingTouch = OVRInput.IsControllerConnected(OVRInput.Controller.Touch);
+
+        Debug.Log($"Debug10 usingHand = {usingHand}, usingTouch = {usingTouch}");
+
+        
         Debug.Log("Debug05-0-0 " + pinchi);
         if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger))
         {
