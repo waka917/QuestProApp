@@ -59,15 +59,15 @@ public class EyeGazeController : MonoBehaviour
     {   
         Debug.Log("test0-1");
 
-        var usingHand = OVRInput.IsControllerConnected(OVRInput.Controller.Hands);
-        if (!usingHand)
+        var usingTouch = OVRInput.IsControllerConnected(OVRInput.Controller.RTouch) | OVRInput.IsControllerConnected(OVRInput.Controller.LTouch);
+        if (usingTouch)
         {
             return;
         }
 
         RaycastHit hit;
         Vector3 rayCastDirection = transform.TransformDirection(Vector3.forward) * rayDistance;
-        LayerMask layerMask = 1 << LayerMask.NameToLayer("Key")| 1 << LayerMask.NameToLayer("Reader");
+        LayerMask layerMask = 1 << LayerMask.NameToLayer("Key")| 1 << LayerMask.NameToLayer("Reader") | 1 << LayerMask.NameToLayer("BG");
 
         if (Physics.Raycast(transform.position, rayCastDirection, out hit, Mathf.Infinity, layerMask))
         {

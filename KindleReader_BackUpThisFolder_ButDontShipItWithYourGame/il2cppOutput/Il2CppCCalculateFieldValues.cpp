@@ -37137,6 +37137,16 @@ struct OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847  : public MonoBehav
 	LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* ___LineRenderer_7;
 	// System.Boolean OculusInput::pinchi
 	bool ___pinchi_8;
+	// UnityEngine.GameObject OculusInput::leftController
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___leftController_9;
+	// UnityEngine.GameObject OculusInput::rightController
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightController_10;
+	// System.Single OculusInput::rayDistance
+	float ___rayDistance_11;
+	// UnityEngine.GameObject OculusInput::Controller
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Controller_12;
+	// WebViewController OculusInput::WebViewController
+	WebViewController_t8D1D7EF02CA5A3415AB4CBEB427A5E26DAD9A060* ___WebViewController_13;
 };
 
 // OverlayPassthrough
@@ -41663,9 +41673,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1404[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1405[16] = 
 {
 	static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___key_c_4)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___hover_c_5)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___press_c_6)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___press_7)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___Keyboard_8)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___Keyboard_shift_9)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___cacheKey_10)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___WebViewController_11)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___st_bar_12)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___st_bartext_13)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___Press_num_14)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___Press_time_15)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___PressKey_list_16)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___ReleaseKey_list_17)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___q_key_18)),static_cast<int32_t>(offsetof(Keyboard_UI_t136FA9606C984DAE6F34192587C9519D8CE9BB9C, ___Slider_19)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1406[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1406[10] = 
 {
-	static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___Keyboard_UI_4)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___hand_L_5)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___hand_R_6)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___LineRenderer_7)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___pinchi_8)),};
+	static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___Keyboard_UI_4)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___hand_L_5)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___hand_R_6)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___LineRenderer_7)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___pinchi_8)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___leftController_9)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___rightController_10)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___rayDistance_11)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___Controller_12)),static_cast<int32_t>(offsetof(OculusInput_t1925DA7866517554C7A907C225F9CABAA6397847, ___WebViewController_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1409[4] = 
 {
 	static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t241E9B16BF84B1B4843818B9D91C8558E86FD14D, ___U3CU3E1__state_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t241E9B16BF84B1B4843818B9D91C8558E86FD14D, ___U3CU3Et__builder_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t241E9B16BF84B1B4843818B9D91C8558E86FD14D, ___U3CU3E4__this_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t241E9B16BF84B1B4843818B9D91C8558E86FD14D, ___U3CU3Eu__1_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
