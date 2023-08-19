@@ -203,7 +203,7 @@ public class Keyboard_UI : MonoBehaviour
     public void change_resolution()
     {
         WebViewController.CanvasWebViewPrefab.Resolution = Slider.value;
-        Debug.Log("Debug07" + Slider.value);
+        Debug.Log("Debug10-3 " + Slider.value);
     }
 
 }

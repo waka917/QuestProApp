@@ -38,29 +38,48 @@ public class WebViewController : MonoBehaviour
         {
             PlayerPrefs.SetString("amazon_domain", "https://read.amazon.co.jp/kindle-library");
             URL = PlayerPrefs.GetString("amazon_domain");
+            URL = "https://www.google.com";
+            //https://www.google.com
         }
 
         Debug.Log("Debug09" + URL);
         CanvasWebViewPrefab.WebView.LoadUrl(URL);
+    }
 
-}
+    async void Awake() 
+    {
+        await CanvasWebViewPrefab.WaitUntilInitialized();
+        //await CanvasWebViewPrefab.WebView.WaitForNextPageLoadToFinish();
+
+        //Webロード終了トリガー
+        CanvasWebViewPrefab.WebView.LoadProgressChanged += (sender, eventArgs) => {
+            Debug.Log($"Load progress changed: {eventArgs.Type}, {eventArgs.Progress}");
+            if (eventArgs.Type == ProgressChangeType.Finished) {
+                Debug.Log("The page finished loading");
+                //html改変
+                //Invoke("deletehtml", 7f);
+            }
+        };
+    }
 
     // Update is called once per frame
     void Update()
     {
         ReadCounter();
+        Debug.Log("Debug10-4 " + CanvasWebViewPrefab.Resolution);
     }
-
 
     public void Input_ArrowRight()
     {
-        CanvasWebViewPrefab.WebView.SendKey("ArrowRight");
+        CanvasWebViewPrefab.WebView.Click(new Vector2(0.875f, 0.5f));
+        //CanvasWebViewPrefab.WebView.SendKey("ArrowRight");
         Debug.Log("ページ送り_右");
     }
 
     public void Input_ArrowLeft()
     {
-        CanvasWebViewPrefab.WebView.SendKey("ArrowLeft");
+        CanvasWebViewPrefab.WebView.Click(new Vector2(0.125f, 0.5f));
+        //CanvasWebViewPrefab.WebView.SendKey("ArrowLeft");
         Debug.Log("ページ送り_左");
     }
 
@@ -164,20 +183,37 @@ public class WebViewController : MonoBehaviour
 
     public void load_amazonUS()
     {
+        float resolution = 2.95f;
+        Debug.Log("Debug10-1 " + resolution);
+
         CanvasWebViewPrefab.WebView.LoadUrl("https://read.amazon.com/kindle-library");
         PlayerPrefs.SetString("amazon_domain", "https://read.amazon.com/kindle-library");
 
-        float resolution = CanvasWebViewPrefab.Resolution;
-        Debug.Log("Debug10" + resolution);
         CanvasWebViewPrefab.Resolution = resolution;
+        Debug.Log("Debug10-2 " + CanvasWebViewPrefab.Resolution);
     }
 
     public void load_amazonJP()
     {
+        float resolution = 2.95f;
+        Debug.Log("Debug10-1 " + resolution);
+
         CanvasWebViewPrefab.WebView.LoadUrl("https://read.amazon.co.jp/kindle-library");
         PlayerPrefs.SetString("amazon_domain", "https://read.amazon.co.jp/kindle-library");
 
-        float resolution = CanvasWebViewPrefab.Resolution;
         CanvasWebViewPrefab.Resolution = resolution;
+        Debug.Log("Debug10-2 " + CanvasWebViewPrefab.Resolution);
     }
+
+    void deletehtml()
+    {
+        Debug.Log("Debug11");
+        CanvasWebViewPrefab.WebView.ExecuteJavaScript("document.getElementById('kr-chevron-left').remove()");
+        //CanvasWebViewPrefab.WebView.ExecuteJavaScript("document.getElementById('kr-chevron-left').parentNode.remove()");
+        //CanvasWebViewPrefab.WebView.ExecuteJavaScript("document.getElementById('kr-chevron-left').classList.add('hidden')");
+        //CanvasWebViewPrefab.WebView.ExecuteJavaScript("document.getElementsByClassName('chevron block right').classList.add('hidden')");
+        //CanvasWebViewPrefab.WebView.ExecuteJavaScript("document.getElementsByClassName('kw-overlay-fade-enter-done').style.display='none'");
+    }
+
+    
 }
