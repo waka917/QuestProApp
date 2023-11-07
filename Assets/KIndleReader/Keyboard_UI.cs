@@ -14,6 +14,7 @@ public class Keyboard_UI : MonoBehaviour
 
     public GameObject Keyboard;
     public GameObject Keyboard_shift;
+    public GameObject Keyboard_special;
 
     public GameObject cacheKey;
     public WebViewController WebViewController;
@@ -176,6 +177,10 @@ public class Keyboard_UI : MonoBehaviour
         {
             Click_Shift();
         }
+        else if (st == "abc" || st == "#+=")
+        {
+            Click_Special();
+        }
         else
         {
             st_bar += st;
@@ -193,10 +198,25 @@ public class Keyboard_UI : MonoBehaviour
         }
         else
         {
-            Keyboard.SetActive(true);
             Keyboard_shift.SetActive(false);
+            Keyboard.SetActive(true);
         }
         
+    }
+
+    void Click_Special()
+    {
+        if (Keyboard_special.activeSelf)
+        {
+            Keyboard_special.SetActive(false);
+            Keyboard.SetActive(true);
+        }
+        else
+        {
+            Keyboard.SetActive(false);
+            Keyboard_shift.SetActive(false);
+            Keyboard_special.SetActive(true);
+        }
     }
 
 
